@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body  class="h-screen w-full bg-[#020D19]">
+
+   <div  id="bodys" class="mx-auto max-w-7xl h-full w-3/6 overflow-hidden ">
+      <div class=" mt-24 border border-slate-400 border-opacity-10 rounded-xl w-[90%] mx-auto  pt-10 h-[80%] flex flex-col bg-[#0D1717]">
+      <div class="flex flex-col items-center rounded-xl w-full px-8">
+       <h1 class="font-extrabold text-4xl mb-10 text-white"> Temperature Converter </h1>
+    
+       <div class="flex w-full items-center mx-4 mb-10">
+         <div class="w-full mr-8">
+            <label for="number-input" class="block mb-2 text-sm font-medium text-white">Select a number:</label>
+            <input type="number" id="textBox" aria-describedby="helper-text-explanation" class="bg-[#111e1e] border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 placeholder-white text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Number" required />
+         </div>
+         
+         <div class="w-full">
+            <label for="number-input" class="block mb-2 text-sm font-medium  text-white">Type</label>
+            <select id="optionsBox" class="select select-bordered w-full bg-[#111e1e] border border-white text-white">
+               <option disabled selected>Type</option>
+               <option>Farenheit</option>
+               <option>Celsius</option>
+               
+             </select>
+         </div>
+       </div>
+       
+       <button class="btn btn-wide bg-[#122020] text-white mb-10 text-[17px]" onclick="convert()">Convert</button>
+
+      </div>
+
+      <div class="w-full rounded-t-[5rem] rounded-b-xl bg-[#101720]  border border-white border-opacity-5 h-full">
+         <div class="w-full h-full flex items-center justify-center">
+            <h1 class="font-extrabold text-5xl text-white text-center" id="Result">  </h1>
+         </div>
+
+       </div>
+
+      </div>
+   </div>
+ 
+</body>
+<script src="prac.js"></script>
+</html>
